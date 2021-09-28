@@ -10,11 +10,11 @@ $(document).ready(function() {
 					ocis_url = "https://new.cernbox.cern.ch";
 				}
 
-				ocis_url += window.location.href.replace(window.location.origin, "")
+				// Redirect to / while we don't handle the old urls
+				// ocis_url += window.location.href.replace(window.location.origin, "")
 
 				setTimeout(function(){
 					window.location.href = ocis_url;
-					// console.log("REDIRECT >>", ocis_url)
 			 	}, 6000);
 
 				$("body").append('<div id="dialog_ocis">\
