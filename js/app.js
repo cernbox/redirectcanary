@@ -11,7 +11,7 @@ $(document).ready(function() {
 				}
 
 				// Redirect to / while we don't handle the old urls
-				// ocis_url += window.location.href.replace(window.location.origin, "")
+				ocis_url += window.location.href.replace(window.location.origin, "")
 
 				setTimeout(function(){
 					window.location.href = ocis_url;
